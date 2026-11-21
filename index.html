@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmed Mohammed Mansoor | QA Automation, Application Security, Edge AI</title>
+<meta name="description" content="Portfolio of Ahmed Mohammed Mansoor: QA automation engineer, API security tester and CPU-native AI researcher.">
+<meta property="og:title" content="Ahmed Mohammed Mansoor | QA Automation and Application Security">
+<meta property="og:description" content="50+ APIs security-tested, Selenium to Playwright migration, and CPU-native AI research.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070B14;--ink:#EAF0FB;--muted:#93A1BA;--card:rgba(255,255,255,.045);--line:rgba(255,255,255,.11);--a1:#22D3EE;--a2:#8B5CF6;--a3:#F472B6;--term:#03060D;--ok:#4ADE80;--glow:.35}
+[data-theme="light"]{--bg:#F4F7FC;--ink:#0F1B33;--muted:#53607A;--card:#fff;--line:#D8E0EE;--a1:#0891B2;--a2:#6D28D9;--a3:#DB2777;--term:#0F1B33;--glow:.12}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);opacity:var(--glow);pointer-events:none}
+body::before{background:var(--a2);top:-25vmax;right:-15vmax}
+body::after{background:var(--a1);bottom:-30vmax;left:-20vmax}
+a{color:var(--a1)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--a1);outline-offset:3px;border-radius:8px}
+.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+nav .logo{font-weight:700;text-decoration:none;color:var(--ink)}
+nav .links{display:flex;gap:22px;align-items:center}
+nav .links a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav .links a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;font-size:.9rem}
+.hero{padding:72px 0 40px;display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-size:.9rem;margin-bottom:20px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-size:clamp(2.6rem,6.2vw,4.4rem);line-height:1.02;margin:0 0 14px;letter-spacing:-.03em;color:var(--a1);background:linear-gradient(100deg,var(--a1),var(--a2) 55%,var(--a3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.typed{font-size:1.4rem;font-weight:500;min-height:2.2rem;margin:0 0 14px}
+.typed i{display:inline-block;width:2px;height:1.2em;background:var(--a1);vertical-align:-.2em;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lede{color:var(--muted);max-width:50ch;margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-weight:600;cursor:pointer;font-family:inherit;font-size:1rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{border:0;color:#04101F;background:linear-gradient(100deg,var(--a1),var(--a2) 120%)}
+[data-theme="light"] .btn.p{color:#fff}
+.term{background:var(--term);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35);color:#D7E2F5}
+.term .bar{display:flex;gap:7px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.term .bar b{width:11px;height:11px;border-radius:50%;background:#FF5F57}
+.term .bar b:nth-child(2){background:#FEBC2E}.term .bar b:nth-child(3){background:#28C840}
+.term pre{margin:0;padding:18px;font:13.5px/1.8 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-x:auto}
+.term .c{color:#7DD3FC}.term .g{color:var(--ok)}.term .m{color:#94A3B8}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:12px 0 56px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.stat b{display:block;font-size:2.3rem;line-height:1.1;letter-spacing:-.02em}
+.stat>span{color:var(--muted);font-size:.93rem}
+section{padding:56px 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:60ch}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--a1),var(--a2),transparent)}
+.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px}
+.job::before{content:"";position:absolute;left:-26px;top:28px;width:12px;height:12px;border-radius:50%;background:var(--a1);box-shadow:0 0 14px var(--a1)}
+.job h3,.proj h3{margin:0;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.93rem;margin:2px 0 10px}
+ul{margin:0;padding-left:1.15em}li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:transform .2s,border-color .2s}
+.proj:hover{transform:translateY(-4px);border-color:var(--a1)}
+.proj.feat{grid-column:1/-1;border-color:color-mix(in srgb,var(--a2) 60%,var(--line));background:linear-gradient(135deg,color-mix(in srgb,var(--a2) 14%,var(--card)),var(--card))}
+.tag{display:inline-block;font-size:.8rem;border:1px solid var(--line);border-radius:999px;padding:2px 11px;margin:10px 6px 0 0;color:var(--muted)}
+.pill{display:inline-block;font-size:.8rem;font-weight:700;border-radius:999px;padding:3px 12px;margin-bottom:12px;color:#04101F;background:linear-gradient(100deg,var(--a1),var(--a3))}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.fact{border-left:3px solid var(--a1);padding-left:12px}
+.fact b{display:block;font-size:1.35rem}.fact span{color:var(--muted);font-size:.9rem}
+.note{color:var(--muted);font-size:.93rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.sk{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.sk h3{margin:0 0 10px;font-size:1.05rem}
+.chip{display:inline-block;font-size:.88rem;padding:4px 12px;margin:0 6px 8px 0;border-radius:8px;background:color-mix(in srgb,var(--a1) 12%,transparent);border:1px solid color-mix(in srgb,var(--a1) 30%,var(--line))}
+.contact{text-align:center;background:linear-gradient(135deg,color-mix(in srgb,var(--a1) 16%,var(--card)),color-mix(in srgb,var(--a2) 18%,var(--card)));border:1px solid var(--line);border-radius:24px;padding:56px 24px}
+.contact .cta{justify-content:center}
+footer{text-align:center;color:var(--muted);padding:32px 0 48px;font-size:.9rem}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding-top:44px}.stats{grid-template-columns:repeat(2,1fr)}.grid,.facts{grid-template-columns:1fr}nav .links a{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo mono" href="#top">ahmed.dev</a>
+  <div class="links"><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button></div>
+</div></nav>
+
+<main class="wrap" id="top">
+<header class="hero">
+  <div>
+    <div class="badge"><span class="dot"></span>Open to work</div>
+    <h1>Ahmed Mohammed Mansoor</h1>
+    <p class="typed mono"><span id="type">QA automation engineer</span><i></i></p>
+    <p class="lede">I find the bugs and security gaps that slip past release day. I automate UI and API tests, run OWASP Top 10 security checks, and turn messy test data into dashboards teams actually read. MS in Computer Science, December 2026.</p>
+    <div class="cta">
+      <a class="btn p" href="resume.pdf">Download resume</a>
+      <a class="btn" href="https://github.com/ahmedyusuf54792">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/ahmed-mohammed-mansoor-839483247/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="term" role="img" aria-label="Terminal showing a summary of Ahmed's work">
+    <div class="bar"><b></b><b></b><b></b></div>
+<pre><span class="m">$</span> whoami
+<span class="c">ahmed-mansoor</span>
+<span class="m">$</span> cat focus.txt
+<span class="c">qa-automation, appsec, edge-ai</span>
+<span class="m">$</span> ./run --recent
+<span class="g">PASS</span> 50+ APIs tested vs OWASP Top 10
+<span class="g">PASS</span> 2M+ test records into Oracle DW
+<span class="g">PASS</span> Selenium to Playwright at Staples
+<span class="m">$</span> <span class="g">ready for your team_</span></pre>
+  </div>
+</header>
+
+<div class="stats rv">
+  <div class="stat"><b><span data-to="50">50</span>+</b><span>APIs security-tested against the OWASP Top 10</span></div>
+  <div class="stat"><b><span data-to="70">70</span>%</b><span>precision, with false positives under 20%</span></div>
+  <div class="stat"><b><span data-to="2">2</span>M+</b><span>test records migrated to an Oracle data warehouse</span></div>
+  <div class="stat"><b><span data-to="20">20</span>+</b><span>regression cases per module, run end to end</span></div>
+</div>
+
+<section id="work">
+  <h2 class="rv">Experience</h2>
+  <p class="sub rv">Quality and security work across retail, SaaS and enterprise teams.</p>
+  <div class="tl">
+    <article class="job rv">
+      <h3>Software Engineering Intern, QA at Staples</h3>
+      <p class="meta mono">Jun 2026 – Aug 2026, Framingham, MA</p>
+      <ul>
+        <li>Led the move from Selenium to Playwright using AI and MCP tooling to speed up test runs, and built custom Eclipse plugins to make REST API testing more reliable.</li>
+        <li>Added an Appium MITM proxy to inspect HTTP(S) traffic in mobile tests, catching routing and data-exposure issues early.</li>
+        <li>Migrated 2M+ test records into an Oracle data warehouse and built Power BI dashboards to trace failure trends.</li>
+        <li>Delivered a GitHub Copilot-based tool that explains test failures in plain language.</li>
+      </ul>
+    </article>
+    <article class="job rv">
+      <h3>Software Quality Engineering Intern at PerfAI</h3>
+      <p class="meta mono">Oct 2025 – Jan 2026, Santa Clara, CA</p>
+      <ul>
+        <li>Ran baseline OWASP Top 10 tests on 50+ APIs at 70% precision, cutting false positives below 20%.</li>
+        <li>Found missing API routes and Swagger gaps in live SaaS apps with HAR capture and Chrome DevTools, shrinking undocumented attack surface.</li>
+      </ul>
+    </article>
+    <article class="job rv">
+      <h3>Software QA Trainee Engineer at Coforge</h3>
+      <p class="meta mono">Aug 2023 – Dec 2023</p>
+      <ul><li>Wrote unit and integration tests with Selenium WebDriver and Maven, added API tests, and tracked defects in Jira within Scrum teams.</li></ul>
+    </article>
+    <article class="job rv">
+      <h3>Cyber Security Intern at Supraja Technologies</h3>
+      <p class="meta mono">Feb 2023 – Apr 2023</p>
+      <ul><li>Ran web vulnerability assessments and manual penetration tests, and documented XSS, SQL injection and broken access control with fixes for developers.</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="rv">Research and projects</h2>
+  <p class="sub rv">From AI architecture to hardware to full-stack apps.</p>
+  <div class="grid">
+    <article class="proj feat rv">
+      <span class="pill">Research, in progress</span>
+      <h3>Nexus Core: a CPU-native language model</h3>
+      <p class="meta">Working paper, not yet peer reviewed. I am a co-author.</p>
+      <p>Most language models need a GPU and use more memory with every token of context. Nexus Core is designed for ordinary CPUs, aimed at edge, offline and privacy-sensitive use. It combines state-space layers, 64 addressable memory slots, linear attention and a 64-token local window, so the history it carries stays a fixed size.</p>
+      <div class="facts">
+        <div class="fact"><b>0.90 MiB</b><span>carried state, constant as context grows (analytical)</span></div>
+        <div class="fact"><b>247.6 → 189.2</b><span>WikiText-2 perplexity, 5k to 20k steps, trained on a laptop CPU</span></div>
+        <div class="fact"><b>3.97×</b><span>smaller weights with INT8 and almost no quality loss</span></div>
+      </div>
+      <p class="note">The paper also reports its limits: about 6.7 tokens per second today, with kernel optimization as the next step.</p>
+      <span class="tag">Edge AI</span><span class="tag">State-space models</span><span class="tag">Quantization</span><span class="tag">CPU inference</span>
+    </article>
+    <article class="proj rv">
+      <span class="pill">Published, IJAEM 2024</span>
+      <h3>Arduino Morse code input system</h3>
+      <p class="meta">Final-year B.Tech project</p>
+      <p>A hardware input device that lets a person type and control a computer with Morse code. It emulates a mouse and keyboard from an Arduino, prototyped on a breadboard, with debounce logic so every press reads cleanly.</p>
+      <span class="tag">Arduino</span><span class="tag">Embedded C++</span><span class="tag">Hardware prototyping</span><span class="tag">Accessibility</span>
+    </article>
+    <article class="proj rv">
+      <h3>Social Network Recommendation Engine</h3>
+      <p class="meta">Jul 2026 – Aug 2026</p>
+      <p>Models users as a graph and uses breadth-first search to rank “People You May Know” by mutual friends, with a Tkinter view of the search queue for debugging.</p>
+      <span class="tag">Python</span><span class="tag">Graphs</span><span class="tag">BFS</span><span class="tag">Tkinter</span>
+    </article>
+    <article class="proj rv">
+      <h3>Express User Management</h3>
+      <p class="meta">Jan 2026 – Feb 2026</p>
+      <p>A full-stack registration app that validates user IDs and password rules on the server, so invalid credentials never reach the database.</p>
+      <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQLite3</span><span class="tag">Validation</span>
+    </article>
+  </div>
+  <p class="note rv" style="margin-top:20px">More code on <a href="https://github.com/ahmedyusuf54792">GitHub</a>.</p>
+</section>
+
+<section id="skills">
+  <h2 class="rv">Skills</h2>
+  <p class="sub rv">The tools I use to ship quality and security.</p>
+  <div class="skills">
+    <div class="sk rv"><h3>Security testing</h3><span class="chip">OWASP Top 10</span><span class="chip">API security</span><span class="chip">HAR analysis</span><span class="chip">MITM proxy</span><span class="chip">Swagger</span></div>
+    <div class="sk rv"><h3>Test automation</h3><span class="chip">Playwright</span><span class="chip">Selenium</span><span class="chip">Appium</span><span class="chip">TestNG</span><span class="chip">REST Assured</span><span class="chip">Postman</span><span class="chip">OpenAPI</span></div>
+    <div class="sk rv"><h3>Languages</h3><span class="chip">Java</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
+    <div class="sk rv"><h3>CI/CD and cloud</h3><span class="chip">Azure Pipelines</span><span class="chip">Git</span><span class="chip">Bitbucket</span><span class="chip">Kubernetes</span><span class="chip">AWS</span></div>
+    <div class="sk rv"><h3>Practices</h3><span class="chip">Agile</span><span class="chip">Scrum</span><span class="chip">End-to-end testing</span><span class="chip">Test design</span><span class="chip">Code review</span></div>
+    <div class="sk rv"><h3>Education</h3><p style="margin:0 0 8px"><b>MS Computer Science</b>, William Jessup University, Dec 2026 (expected)</p><p style="margin:0 0 8px"><b>B.Tech Computer Science</b>, MGIT, First Class Honors, 2024</p><p class="note" style="margin:0">C IGNITE Automation Testing (Coforge, 2023). Oracle Database 12c SQL Fundamentals (2024).</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact rv">
+    <h2>Let’s work together</h2>
+    <p class="sub" style="margin:0 auto 26px">Looking for QA automation, SDET and application security testing roles.</p>
+    <div class="cta">
+      <a class="btn p" href="mailto:ahmedmohammedmansoor16@gmail.com">Email me</a>
+      <button class="btn" id="copy" type="button">Copy email</button>
+      <a class="btn" href="https://www.linkedin.com/in/ahmed-mohammed-mansoor-839483247/">LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Ahmed Mohammed Mansoor</footer>
+
+<script>
+(function(){
+var d=document,r=d.documentElement,rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+try{var t=localStorage.getItem("theme");if(t)r.setAttribute("data-theme",t)}catch(e){}
+d.getElementById("theme").onclick=function(){var n=r.getAttribute("data-theme")==="light"?"dark":"light";r.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}};
+d.getElementById("copy").onclick=function(){var b=this;(navigator.clipboard?navigator.clipboard.writeText("ahmedmohammedmansoor16@gmail.com"):Promise.reject()).then(function(){b.textContent="Copied"},function(){b.textContent="ahmedmohammedmansoor16@gmail.com"})};
+if(rm)return;
+r.classList.add("js");
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+d.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+d.querySelectorAll("[data-to]").forEach(function(el){var to=+el.dataset.to,s=null;function f(ts){s=s||ts;var p=Math.min((ts-s)/1200,1);el.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(f)}el.textContent="0";requestAnimationFrame(f)});
+var roles=["QA automation engineer","Application security tester","API test specialist","Edge AI researcher"],i=0,j=0,del=false,el=d.getElementById("type");
+(function tick(){var w=roles[i];j+=del?-1:1;el.textContent=w.slice(0,j);var wait=del?35:70;if(!del&&j===w.length){del=true;wait=1600}else if(del&&j===0){del=false;i=(i+1)%roles.length;wait=300}setTimeout(tick,wait)})();
+})();
+</script>
+</body>
+</html>
